@@ -1,0 +1,3 @@
+# cannot use public hostname because of SSH firewall rules
+salt-test:
+  host: 10.0.0.1

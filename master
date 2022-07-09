@@ -1,0 +1,21 @@
+file_roots:
+  # base directory for the salt states (equivalent of master's /srv/salt
+  # directory)
+  base:
+    - ./states
+
+pillar_roots:
+  # base directory for the salt pillars (equivalent of master's /srv/pillars
+  # directory)
+  base:
+    - ./pillar
+
+# default options for the roster file
+roster_defaults:
+  user: salt
+  # has to be provided by CI job
+  priv: ./ssh.priv
+  sudo: True
+
+# local log file directories to prevent permission denied
+root_dir: .salt/
